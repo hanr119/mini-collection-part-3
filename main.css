@@ -1,12 +1,76 @@
 body {
     font-family: 'Montserrat', sans-serif;
+    padding: 20px;
+    background-color: black;
+    color: white;
     /* Thin 100
     Regular 400
     Bold 700 */
 }
 
 .title {
+    font-size: 5vw;
     padding: 20px;
     text-align: center;
+    color:#fe53bb;
+    filter: drop-shadow(0 0 1rem white);
+    animation: pulse 5s infinite;
 }
 
+img {
+    width: 100%;
+    height: auto;
+}
+
+.story-container {
+    padding: 1rem;
+    border: 2px solid white;
+    border-radius: 25px;
+    transition: 0.5s;
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+}
+
+.story-container:hover {
+    border: 2px solid #fe53bb;
+}
+
+.filter {
+    padding: 2rem;
+}
+
+.story-title {
+    font-style: italic;
+}
+
+h1 {
+    font-weight: normal;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.story-cover {
+    width: 100%;
+    height: auto;
+    display: none;
+}
+
+.story-cover:active {
+    display: block;
+}
+
+.story-summary {
+    display: none;
+}
+
+.story-summary:active {
+    display: block;
+}
+
+
+@keyframes pulse {
+    0%{filter: drop-shadow(0 0 1rem white);}
+    50% {filter: drop-shadow(0 0 2rem white);)
+    100%{filter: drop-shadow(0 0 1rem white);}
+}
