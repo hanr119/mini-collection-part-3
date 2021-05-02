@@ -15,6 +15,7 @@ body {
     color:#fe53bb;
     filter: drop-shadow(0 0 1rem white);
     animation: pulse 5s infinite;
+    font-weight: bold;
 }
 
 img {
@@ -50,6 +51,10 @@ h1 {
     margin: 0;
 }
 
+span {
+    line-height: 2em;
+}
+
 .story-cover {
     width: 100%;
     height: auto;
@@ -68,9 +73,8 @@ h1 {
     display: block;
 }
 
-
 @keyframes pulse {
-    0%{filter: drop-shadow(0 0 1rem white);}
-    50% {filter: drop-shadow(0 0 2rem white);)
-    100%{filter: drop-shadow(0 0 1rem white);}
+    0%{filter: drop-shadow(0 0 1rem #fe53bb);}
+    50% {filter: drop-shadow(0 0 2rem white);}
+    100%{filter: drop-shadow(0 0 1rem #fe53bb);}
 }
