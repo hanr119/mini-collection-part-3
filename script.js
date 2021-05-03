@@ -111,7 +111,7 @@ function showStories() {
 
       // add event listener to filter to add active class to story
 
-      var filterDarkHumor = document.querySelector.apply(".dark-humor");
+      var filterDarkHumor = document.querySelector(".dark-humor");
       filterDarkHumor.addEventListener("click", function(){
           if (storyContainer.classList.contains("dark-humor")) {
             storyContainer.style.background = "#FFFFFF30";
