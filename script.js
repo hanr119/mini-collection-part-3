@@ -84,7 +84,7 @@ function showStories() {
       storyContainer.append(storyAuthor);
 
       // add summary to story container
-      storySummary = document.createElement("p");
+      var storySummary = document.createElement("p");
       storySummary.classList.add("story-summary");
       storySummary.innerText = story.fields.summary;
       storyContainer.append(storySummary);
@@ -99,7 +99,7 @@ function showStories() {
       // when user clicks on story container, image and cover will toggle visibility
       storyContainer.addEventListener("click", function(){
           storySummary.classList.toggle("active");
-          storyContainer.classList.toggle("active");
+          storyCover.classList.toggle("active");
       })
 
       // get type field from airtable
@@ -116,9 +116,68 @@ function showStories() {
           if (storyContainer.classList.contains("dark-humor")) {
             storyContainer.style.background = "#FFFFFF30";
           } else {
-            storyContainer.style.background = "black"
+            storyContainer.style.background = "transparent";
           }
       })
       
+      var filterHorror = document.querySelector(".horror");
+      filterHorror.addEventListener("click", function(){
+          if (storyContainer.classList.contains("horror")) {
+            storyContainer.style.background = "#580aff4D";
+          } else {
+            storyContainer.style.background = "transparent";
+          }
+      })
+
+      var filterGrowth = document.querySelector(".growth");
+      filterGrowth.addEventListener("click", function(){
+          if (storyContainer.classList.contains("growth")) {
+            storyContainer.style.background = "#ffbe0b4D";
+          } else {
+            storyContainer.style.background = "transparent";
+          }
+      })
+
+      var filterSurrealism = document.querySelector(".surrealism");
+      filterSurrealism.addEventListener("click", function(){
+          if (storyContainer.classList.contains("surrealism")) {
+            storyContainer.style.background = "#ff006e4D";
+          } else {
+            storyContainer.style.background = "transparent";
+          }
+      })
+
+      var filterOptimism = document.querySelector(".optimism");
+      filterOptimism.addEventListener("click", function(){
+          if (storyContainer.classList.contains("optimism")) {
+            storyContainer.style.background = "#fb56074D";
+          } else {
+            storyContainer.style.background = "transparent";
+          }
+      })
+
+      var filterDrama = document.querySelector(".drama");
+      filterDrama.addEventListener("click", function(){
+          if (storyContainer.classList.contains("drama")) {
+            storyContainer.style.background = "#be0aff4D";
+          } else {
+            storyContainer.style.background = "transparent";
+          }
+      })
+
+      var filterAdventure = document.querySelector(".adventure");
+      filterAdventure.addEventListener("click", function(){
+          if (storyContainer.classList.contains("adventure")) {
+            storyContainer.style.background = "#ff00004D";
+          } else {
+            storyContainer.style.background = "transparent";
+          }
+      })
+    
+      var filterReset = document.querySelector(".js-reset");
+      filterReset.addEventListener("click", function(){
+          storyContainer.style.background = "transparent";
+      })
+
     });
 }

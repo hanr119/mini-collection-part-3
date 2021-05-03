@@ -73,6 +73,10 @@ span {
     display: block;
 }
 
+.js-reset {
+    font-weight: bold;
+}
+
 @keyframes pulse {
     0%{filter: drop-shadow(0 0 1rem #fe53bb);}
     50% {filter: drop-shadow(0 0 2rem white);}
