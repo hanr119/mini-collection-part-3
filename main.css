@@ -61,7 +61,7 @@ span {
     display: none;
 }
 
-.story-cover:active {
+.story-cover.active {
     display: block;
 }
 
@@ -69,7 +69,7 @@ span {
     display: none;
 }
 
-.story-summary:active {
+.story-summary.active {
     display: block;
 }
 
