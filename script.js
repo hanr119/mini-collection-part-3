@@ -97,10 +97,10 @@ function showStories() {
 
       // add event listener
       // when user clicks on story container, image and cover will toggle visibility
-      // storyContainer.addEventListener("click", function(){
-      //     storySummary.classList.toggle("active");
-      //     storyContainer.classList.toggle("active");
-      // })
+      storyContainer.addEventListener("click", function(){
+          storySummary.classList.toggle("active");
+          storyContainer.classList.toggle("active");
+      })
 
       // get type field from airtable
       // loop through the array and add each genre as a class to the story container
